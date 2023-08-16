@@ -113,7 +113,7 @@ elseif rob_mode==1
             yk=xk+w*(xk-xko);                            % Extrapolation
             x=SCAD_Prox_New(yk,thr,a);       % Thresholding
             zx=y-A*x;
-            x = x0;
+            x0 = x;
 			
             while (zx'*zx) > epsp2                 % Proposed Robust Projection
                 
